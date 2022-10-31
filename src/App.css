@@ -1,0 +1,80 @@
+.operands, .operators {
+    display: flex;
+}
+
+.comparator, .rhs, .operand, .operator {
+    align-items: center;
+    background-color: green;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    cursor: move;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-weight: bolder;
+    height: 120px;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+}
+
+.comparator, .operator, .rhs{
+    background-color: purple;
+    color: white;
+    height: 80px;
+}
+
+.comparator, .rhs{
+    background-color: pink;
+    color: black;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.canvas {
+    align-items: center;
+    border: 5px dashed black;
+    display: flex;
+    height: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.submit{
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.close {
+    position: relative;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+    font-family: Montserrat;
+}
+
+.close > .close-icon {
+    display: block;
+}
+
+.close-icon:hover {
+    color: aqua;
+}
